@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Swiper":"../../component/index/swiper/swiper",
+    "Room":"../../component/index/room/chooseSeat"
+  },
+  "navigationBarTitleText": "开心自习室"
+}

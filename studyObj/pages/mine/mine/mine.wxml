@@ -1,0 +1,39 @@
+<!--pages/mine/mine.wxml-->
+<view class="page">
+  <view class="header">
+    <view class="head">
+      <image class="headImg" src="{{head}}"></image>
+    </view>
+    <view></view>
+    <button class="login" open-type="getUserInfo" bindgetuserinfo="login">登录</button>
+  </view>
+  <view> 
+{{n}}
+
+  </view>
+  <view class="content">
+      <view class="list" wx:for="{{list}}" wx:key="index">
+        <view class="list-left">
+            <image class="listImg" src="{{item.img}}" ></image>
+            <view>{{item.mes}}</view>
+        </view>
+        <view class="list_btn">{{item.btn}}</view>
+      </view>
+  </view>
+  <view class="record-wrap">
+    <view class="record">
+      <view class="title">
+        <text class="myRecord">我的学习记录</text>
+        <image class="share" src="{{share}}" ></image>
+      </view>
+        <view class="message">
+          <view>累计一共学习了{{xx}}小时</view>
+          <view>第一次学习时间：2015-05-15 15:05:15{{}}</view>
+          <view class="last">
+              <view>最后的学习时间：2015-05-15 15:05:15{{}}</view>
+              <view class="detail" bindtap="detail">详细</view>
+          </view>
+        </view>
+      </view> 
+  </view>
+</view>

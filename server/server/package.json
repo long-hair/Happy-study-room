@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "startmg":"mongod --dbpath=D:\/微信小程序\/小程序\/db\/db --logpath=D:\/微信小程序\/小程序\/db\/log\/db.log"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-json-error": "^3.1.2",
+    "koa-parameter": "^3.0.1",
+    "koa-router": "^10.0.0",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

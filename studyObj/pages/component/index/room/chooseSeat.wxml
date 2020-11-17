@@ -1,0 +1,35 @@
+<!--pages/component/index/room/chooseSeat.wxml-->
+<view class="chooseSeatWrap">
+    <view class="title">选择座位</view>
+    <view class="seat_wrap">
+      <view class="double">
+        <view>
+            <view>
+              <view class="seat-name">双人阅读区</view>
+            </view>
+            <view class="tag">
+                <view>供2个人使用</view>
+                <view>独立私密的阅读环境</view>
+          </view>
+        </view>
+       
+        <view class="btn-double" bindtap="reserve" data-type="1">立即预约</view>
+      </view>
+      <view class="solo_wrap">
+        <view class="solo">
+          <view class="solo_head">
+            <view class="seat-solo-name">明区-单人</view>
+            <view class="btn-one" bindtap="reserve" data-type="2">立即预约</view>
+          </view>
+          <view>开放的单人学习区域</view>
+        </view>
+        <view  class="solo">
+          <view class="solo_head">
+            <view class="seat-solo-name">暗区-单人</view>
+            <view class="btn-one" bindtap="reserve" data-type="3">立即预约</view>
+          </view>
+          <view>幽静的单人学习区域</view>
+        </view>
+      </view>
+    </view>
+</view>

@@ -1,0 +1,127 @@
+/* pages/mine/mine.wxss */
+.page{
+  width: 100%;
+  height: 100%;
+  background-color:rgb(242,242,242) ;
+}
+.header{
+    height:250rpx;
+    width: 758rpx;
+    margin-bottom: 10rpx;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    padding-left:40rpx ;
+    align-items: center; 
+}
+.head{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.headImg{
+  width: 100%;
+  height: 100%;
+}
+.login{
+  display: block;
+  width: 140rpx!important;
+  height: 40rpx!important;
+  padding: 0!important;
+  text-align: center;
+  margin: 0!important;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+  background-color: white;
+  border-radius: 6rpx;
+  border: 2rpx solid rgb(152,151,253);
+  font-size: 24rpx;
+  color: rgb(152,151,253);
+}
+.content{
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: white;
+  padding-top: 40rpx;
+}
+.list{
+  width: 94%;
+  background-color:rgb(242,242,242) ;
+  height: 200prx;
+  margin-bottom: 24rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  font-size: 24rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+}
+.list-left{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+}
+.listImg{
+  width: 72rpx;
+  height: 72rpx;
+  margin-right: 20rpx;
+}
+.list_btn{
+  color:rgb(152,151,253);
+}
+.record-wrap{
+  width: 100%;
+  height: 400rpx;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.record{
+  width:94%;
+  height: 280rpx;
+  background-color: rgb(242,242,242);
+  padding: 40rpx ;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  line-height: 60rpx;
+  font-size: 24rpx;
+}
+.title{
+  width: 100%;
+  height: 40rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myRecord{
+  font-size: 36rpx;
+  font-weight: 600;
+  line-height: 40rpx;
+}
+.share{
+  width: 40rpx;
+  height: 40rpx;
+}
+.last{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.detail{
+  width: 160rpx;
+  height: 50rpx;
+  background-color: rgb(146,146,253);
+  color: white;
+  text-align: center;
+  border-radius: 30rpx;
+  line-height: 50rpx;
+}

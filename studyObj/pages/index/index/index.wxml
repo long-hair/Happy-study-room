@@ -1,0 +1,47 @@
+<!--pages/index/index.wxml-->
+<view class="page"> 
+  <view class="head">
+      <Swiper swiper="{{swiper}}"/>
+  </view>
+  <view class="room">
+      <Room/>
+      <view class="site">
+        <view class="room_address">自习室地址</view>
+        <view class="address_wrap">
+            <view class="address_title">
+              <image class="location_icon" src="{{location}}"></image>
+              <view>福建省福州市台江区天厝路350-5号</view>
+            </view>
+            <view>
+              <view class="address_btn">查看地图 ></view>
+            </view>
+        </view>
+      </view>
+      <view class="space">
+        <view class="room_address">空间介绍</view>
+        <view wx:for="{{space}}">
+          <image class="space_img" src="{{item.src}}"></image>
+          <view>{{item.mes}}</view>
+        </view>
+      </view>
+      <view class="flow_wrap">
+        <view class = 'room_address'>学习流程</view>
+        <view class="flow" wx:for="{{flow}}" wx:key="index">
+            <view class="flow_con">
+                <view class="circle">{{index+1}}</view>
+                <view>{{item}}</view>
+            </view>
+        </view>
+      </view>
+      <view class="matters_wrap">
+        <view  class = 'room_address'>注意事项</view>
+        <view class="ma_wrap">
+          <view class="matters" wx:for="{{matters}}" wx:key="index">
+                <view class="matters_title">{{item.title}}</view>
+                <view class="matters_mes">{{item.mes}}</view>
+           </view>
+        </view>
+      
+      </view>
+  </view>
+</view>

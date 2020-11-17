@@ -1,0 +1,6 @@
+<!--pages/component/index/swiper/swiper.wxml-->
+<swiper class="swiper" autoplay="{{true}}" interval="3000"  circular="{{true}}" >
+        <swiper-item  class="swiper-item" wx:for="{{swiper}}" :wx:key="index" >
+            <image class="item-img" src="{{item}}" ></image>
+        </swiper-item>
+</swiper>

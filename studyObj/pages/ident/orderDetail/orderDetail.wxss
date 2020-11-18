@@ -1,0 +1,102 @@
+.orderDetail{
+  padding: 30rpx;
+}
+.orderDetail .info{
+  height: 60rpx;
+  font-size: 26rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.orderDetail .info .tit{
+  color: #333;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.orderDetail .info .con{
+  color: #666;
+}
+.orderDetail .info .change{
+  width: 200rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background: linear-gradient(to right, #8D8CD0, #B5B4FA );
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  position: absolute;
+  right: 0;
+}
+.orderDetail .tips{
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+.orderDetail .photo{
+  width: 100%;
+  margin-top: 20rpx;
+}
+.orderDetail .photo .img{
+  width: 100%;
+  height: 400rpx;
+  background: linear-gradient(to right, #99999D, #DFDEE7 );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.orderDetail .photo .img image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.orderDetail .photo .img text{
+  font-size: 26rpx;
+  color: #fff;
+}
+.orderDetail .photo .saoma{
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6rpx;
+  background: linear-gradient(to right, #8E8DD0, #B7B6FC );
+}
+.orderDetail .photo .saoma image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.orderDetail .photo .saoma text{
+  font-size: 30rpx;
+  color: #fff;
+}
+.orderDetail .explain{
+  margin-top: 50rpx;
+}
+.orderDetail .explain .tit{
+  line-height: 50rpx;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.orderDetail .explain .con{
+  margin-top: 10rpx;
+  width: 100%;
+  background-color: #F2F2F2;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.orderDetail .explain .con text{
+  display: block;
+  font-size: 26rpx;
+  color: #999;
+  line-height: 60rpx;
+}

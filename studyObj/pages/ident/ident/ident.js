@@ -1,66 +1,57 @@
-// pages/ident/ident.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  // item: {
+  //   id: String,         // 订单标号id
+  //   area: String,       // 座位区域（单、双）
+  //   tabelNo: Number,    // 座号
+  //   date: String,       // 日期
+  //   time: String,       // 时间段
+  //   price: Number,      // 价格
+  //   status: Number      // 状态  1为待使用，2为已完成，3为已过期
+  // },
   data: {
-
+    orderList: [
+      {
+        id: '001',
+        area: '双人区',
+        tabelNo: 5,
+        date: '2020-12-11',
+        time: '18:00~19:00',
+        price: 25.5,
+        status: 1   //订单状态，1为待使用，2为已完成，3为已过期
+      },
+      {
+        id: '002',
+        area: '单人区',
+        tabelNo: 8,
+        date: '2020-12-12',
+        time: '15:00~16:00',
+        price: 12,
+        status: 1   //订单状态，1为待使用，2为已完成，3为已过期
+      },
+      {
+        id: '003',
+        area: '双人区',
+        tabelNo: 5,
+        date: '2020-12-11',
+        time: '18:00~19:00',
+        price: 25.5,
+        status: 2   //订单状态，1为待使用，2为已完成，3为已过期
+      },
+      {
+        id: '004',
+        area: '双人区',
+        tabelNo: 5,
+        date: '2020-12-11',
+        time: '18:00~19:00',
+        price: 25.5,
+        status: 3   //订单状态，1为待使用，2为已完成，3为已过期
+      }
+    ]
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  pushAction(res){
+    let detail = res.currentTarget.dataset.detail;
+    wx.navigateTo({
+      url: '/pages/ident/orderDetail/orderDetail?detail=' + JSON.stringify(detail),
+    })
   }
 })

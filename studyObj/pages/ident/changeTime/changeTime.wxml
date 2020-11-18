@@ -1,0 +1,8 @@
+<view class="changeTime">
+  <view class="top">
+    <text>Tips：请选择新的座位和新的读书起始时间</text>
+  </view>
+  <view class="bot">
+    立即预约
+  </view>
+</view>

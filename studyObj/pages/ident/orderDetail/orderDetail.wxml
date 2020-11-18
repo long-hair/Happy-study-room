@@ -1,0 +1,33 @@
+<view class="orderDetail">
+  <view class="info">
+    <text class="tit">预约座位：</text>
+    <text class="con">{{detail.area}}-{{detail.tabelNo}}号桌</text>
+  </view>
+  <view class="info">
+    <text class="tit">预约时间：</text>
+    <text class="con">{{detail.date}}  {{detail.time}}</text>
+    <view class="change" bindtap="changeAction" >改签</view>
+  </view>
+  <view class="info">
+    <text class="tit">订单金额：</text>
+    <text class="con">￥{{detail.price}}元</text>
+  </view>
+  <view class="tips">Tips: 请提前5分钟到达自习室即可，太早了没座位哦！</view>
+  <view class="photo">
+    <view class="img">
+      <image/>
+      <text>人物学习的插画图</text>
+    </view>
+    <view class="saoma">
+      <image src="../../../assets/img/saoma.svg" />
+      <text>扫描桌上二维码，开灯学习</text>
+    </view>
+  </view>
+  <view class="explain">
+    <view class="tit">使用说明</view>
+    <view class="con">
+      <text>1、预约时间段内，您可以进行打卡学习，打卡后您的座位灯光会保持开启，可以通过电源开关进行关闭</text>
+      <text>2、预约时间结束后，灯光会自动熄灭，为了不影响下一位朋友使用，请您及时收拾物品离席。</text>
+    </view>
+  </view>
+</view>

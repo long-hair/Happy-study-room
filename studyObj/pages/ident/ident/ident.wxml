@@ -1,3 +1,26 @@
-<!--pages/ident/ident.wxml-->
-<text>pages/ident/ident.wxml</text>
-<view>123</view>
+<view class="ident">
+  <view wx:for="{{orderList}}" wx:key="index" class="order {{item.status !== 1 ? 'over' : ''}}" >
+    <view class="info">
+      <text class="tit" >预约座位:</text>
+      <text class="con">{{item.area}}-{{item.tabelNo}}号桌</text>
+    </view>
+    <view class="info">
+      <text class="tit" >预约时间:</text>
+      <text class="con">{{item.date}}  {{item.time}}</text>
+    </view>
+    <view class="info">
+      <text class="tit" >订单金额:</text>
+      <text class="con">￥{{item.price}}元</text>
+      <text class="orderDetail" wx:if="{{item.status === 1}}" bindtap="pushAction" data-detail="{{item}}" >订单详情 ></text>
+    </view>
+    <view class="photo" wx:if="{{item.status === 1}}"  bindtap="pushAction" data-detail="{{item}}" >
+      <image src="../../../assets/img/saoma.svg" />
+      <text>扫码开门</text>
+    </view>
+    <view class="other" wx:else >
+      <view class="line"></view>
+      <view class="con" wx:if="{{item.status === 2}}" >订单已完成</view>
+      <view class="con" wx:if="{{item.status === 3}}" >订单已过期</view>
+    </view>
+  </view>
+</view>

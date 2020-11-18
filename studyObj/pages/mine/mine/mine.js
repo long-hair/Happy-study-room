@@ -42,7 +42,7 @@ Page({
   },
 
 
-  login(info){
+  login:function (info){
     if(info.detail.errMsg==='getUserInfo:ok'){
       this.setData({head:info.detail.userInfo.avatarUrl})
     }else{

@@ -25,7 +25,7 @@
       },
       {
         "pagePath": "pages/ident/ident/ident",
-        "text": "我的叮当",
+        "text": "我的订单",
         "iconPath":"./assets/img/mine.png",
         "selectedIconPath":"./assets/img/smine.png"
       },

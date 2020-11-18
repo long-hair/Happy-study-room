@@ -1,0 +1,25 @@
+/* pages/component/chooseSeat/area/area.wxss */
+.area_wrap{
+  width: 750rpx;
+  height: 123rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.area{
+  width:218rpx;
+  height: 55rpx;
+  background-color: rgb(170,170,170);
+  text-align: center;
+  color: white;
+  line-height: 55rpx;
+  margin: 2rpx;
+}
+.double{
+  border-radius: 27.5rpx 0 0 27.5rpx;
+}
+.solo_dark{
+  border-radius:  0 27.5rpx 27.5rpx 0;
+
+
+}

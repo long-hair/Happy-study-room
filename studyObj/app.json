@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index/index",
     "pages/mine/mine/mine",
-    "pages/ident/ident/ident"
+    "pages/ident/ident/ident",
+    "pages/index/sunscribe/subscribe"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -12,34 +13,29 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
-  "tabBar":{
-    "color":"#dbdbdb",
+  "tabBar": {
+    "color": "#dbdbdb",
     "selectedColor": "#1296db",
     "list": [
       {
         "pagePath": "pages/index/index/index",
         "text": "首页",
-        "iconPath":"./assets/img/home.png",
-        "selectedIconPath":"./assets/img/shome.png"
-        
+        "iconPath": "./assets/img/home.png",
+        "selectedIconPath": "./assets/img/shome.png"
       },
       {
         "pagePath": "pages/ident/ident/ident",
         "text": "我的订单",
-        "iconPath":"./assets/img/mine.png",
-        "selectedIconPath":"./assets/img/smine.png"
+        "iconPath": "./assets/img/mine.png",
+        "selectedIconPath": "./assets/img/smine.png"
       },
       {
-        "pagePath":"pages/mine/mine/mine",
+        "pagePath": "pages/mine/mine/mine",
         "text": "个人中心",
-        "iconPath":"./assets/img/ident.png",
-        "selectedIconPath":"./assets/img/sident.png"
-
-
+        "iconPath": "./assets/img/ident.png",
+        "selectedIconPath": "./assets/img/sident.png"
       }
-    
     ],
     "position": "bottom"
   }
-
 }

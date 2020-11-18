@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "Area":"../../component/chooseSeat/area/area"
+  },
+  "navigationBarTitleText": "预约选座"
+}

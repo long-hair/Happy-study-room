@@ -14,10 +14,17 @@ Component({
 
   },
 
+  // 立即预约
+ 
   /**
    * 组件的方法列表
    */
   methods: {
+    reserve(ev){
+      wx.navigateTo({
+        url: `/pages/index/sunscribe/subscribe?index=${ev.target.dataset.type}`,
+      })
+    },
 
   }
 })

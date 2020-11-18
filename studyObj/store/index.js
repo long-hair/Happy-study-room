@@ -2,6 +2,7 @@ import {createStore} from 'redux'
 const initialState = {
   isLogin:false
 }
+
 const reducer = (state = initialState,action)=>{
   switch (action.type) {
     case "login":

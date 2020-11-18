@@ -1,0 +1,6 @@
+<!--pages/component/chooseSeat/area/area.wxml-->
+<view class="area_wrap">
+  <view class="double area">双人阅读区</view>
+  <view class="solo_light area">明区-单人</view>
+  <view class="solo_dark area">暗区-单人</view>
+</view>

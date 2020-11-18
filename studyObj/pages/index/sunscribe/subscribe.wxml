@@ -1,0 +1,4 @@
+<!--pages/index/sunscribe/subscribe.wxml-->
+<view class="page">
+  <Area/>
+</view>

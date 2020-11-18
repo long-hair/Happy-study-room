@@ -35,7 +35,8 @@ router.post('/send_code',async(ctx)=>{
   ctx.status = 200;
   ctx.body = {
     message:'ok',
-    token
+    token,
+    openid:result.data.openid
 
   }
   // 隐藏步骤:静默注册

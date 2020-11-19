@@ -1,0 +1,12 @@
+<view class="money">
+  <view class="has">我的账户余额：<text>xx元</text></view>
+  <view class="list">
+    <view class="item" wx:for="{{moneyType}}" wx:key="index" >
+      <text>￥{{item.pr}}</text>
+      <text>送{{item.ot}}元</text>
+    </view>
+  </view>
+  <view class="pay">
+    <button bindtap="payAction" >充值</button>
+  </view>
+</view>

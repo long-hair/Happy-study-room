@@ -1,0 +1,30 @@
+<view class="cardShop">
+  <view wx:for="{{cardType}}" wx:key="index" class="type">
+    <view class="name">{{item.name}}</view>
+    <view class="info">
+      <view class="area">可用范围：{{item.area}}</view>
+      <view class="dura">有效期：{{item.dura}}</view>
+    </view>
+    <view class="buy" bindtap="buyAction" data-price="{{item.price}}">购买</view>
+  </view>
+
+  <view class="mask" wx:if="{{showMask}}" >
+    <view class="module">
+      <view class="top">需要支付：{{price}}元</view>
+      <radio-group class="payType" bindchange="chooseAction">
+        <view>
+          <radio value="1" checked="true" />
+          <text>余额支付（当前余额xx元）</text>
+        </view>
+        <view>
+          <radio value="2" />
+          <text>微信支付</text>
+        </view>
+      </radio-group>
+      <view class="bot">
+        <button bindtap="payAction" >确认支付</button>
+      </view>
+      <view class="close" bindtap="closeAction" >X</view>
+    </view>
+  </view>
+</view>

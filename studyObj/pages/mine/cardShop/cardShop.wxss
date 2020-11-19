@@ -1,0 +1,115 @@
+.cardShop .type{
+  width: 90%;
+  height: 180rpx;
+  margin: 30rpx auto;
+  box-shadow: 0 0 10rpx #aaa;
+  display: flex;
+  align-items: center;
+}
+.cardShop .type .name{
+  width: 200rpx;
+  height: 100%;
+  background-image: linear-gradient(to right, #8887FD, #B8B2EF);
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.cardShop .type .info{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardShop .type .info .area{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+.cardShop .type .info .dura{
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+.cardShop .type .buy{
+  width: 160rpx;
+  height: 120rpx;
+  box-sizing: border-box;
+  border-left: 1px solid #BAB9F4;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 28rpx;
+  color: #8080FF;
+}
+
+.cardShop .mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.cardShop .mask .module{
+  width: 600rpx;
+  height: 460rpx;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40rpx;
+}
+.cardShop .mask .module .close{
+  position: absolute;
+  top: 10rpx;
+  right: 30rpx;
+  font-size: 34rpx;
+  color: #333;
+}
+.cardShop .mask .module .top{
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+.cardShop .mask .module .payType{
+  width: 100%;
+  height: 230rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  border-top: 1px solid #d4d4d4;
+  border-bottom: 1px solid #d4d4d4;
+}
+.cardShop .mask .module .payType view{
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 80rpx;
+  margin: 20rpx 0; 
+  display: flex;
+  align-items: center;
+  font-size: 28rpx;
+  color: #333;
+}
+.cardShop .mask .module .bot{
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardShop .mask .module .bot button{
+  width: 300rpx;
+  height: 80rpx;
+  background: #8080FF;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  color: #fff;
+  padding: 0;
+}

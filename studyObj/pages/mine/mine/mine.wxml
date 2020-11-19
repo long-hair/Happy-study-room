@@ -12,13 +12,46 @@
 
   </view>
   <view class="content">
-      <view class="list" wx:for="{{list}}" wx:key="index">
+      <view class="list">
         <view class="list-left">
-            <image class="listImg" src="{{item.img}}" ></image>
-            <view>{{item.mes}}</view>
+            <image class="listImg" src="../../../assets/img/shop.png" ></image>
+            <view>卡券商城</view>
         </view>
-        <view class="list_btn">{{item.btn}}</view>
+        <view class="list_btn" bindtap="buyCardAction" >前往购买></view>
       </view>
+
+      <view class="list">
+        <view class="list-left">
+            <image class="listImg" src="../../../assets/img/coupon.png" ></image>
+            <view>我的卡卷</view>
+        </view>
+        <view class="list_btn" bindtap="myCardAction" >n张></view>
+      </view>
+
+      <view class="list">
+        <view class="list-left">
+            <image class="listImg" src="../../../assets/img/money.png" ></image>
+            <view>钱包余额（￥xx.x元）</view>
+        </view>
+        <view class="list_btn" bindtap="payAction">充值></view>
+      </view>
+      
+      <view class="list">
+        <view class="list-left">
+            <image class="listImg" src="../../../assets/img/problem.png" ></image>
+            <view>常见问题</view>
+        </view>
+        <view class="list_btn" bindtap="qsAction" >查看></view>
+      </view>
+
+      <view class="list">
+        <view class="list-left">
+            <image class="listImg" src="../../../assets/img/wx.png" ></image>
+            <view>联系商家</view>
+        </view>
+        <view class="list_btn" bindtap="callAction" >拨打电话></view>
+      </view>
+      
   </view>
   <view class="record-wrap">
     <view class="record">

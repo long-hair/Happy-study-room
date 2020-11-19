@@ -5,8 +5,13 @@
     "pages/ident/ident/ident",
     "pages/ident/orderDetail/orderDetail",
     "pages/ident/changeTime/changeTime",
-    "pages/index/sunscribe/subscribe"
+    "pages/index/sunscribe/subscribe",
+    "pages/mine/cardShop/cardShop",
+    "pages/mine/myCard/myCard",
+    "pages/mine/money/money",
+    "pages/mine/question/question"
   ],
+  "entryPagePath": "pages/mine/mine/mine",
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F7F7F7",
@@ -30,7 +35,6 @@
         "text": "我的订单",
         "iconPath": "./assets/img/ident.png",
         "selectedIconPath": "./assets/img/sident.png"
-        
       },
       {
         "pagePath": "pages/mine/mine/mine",

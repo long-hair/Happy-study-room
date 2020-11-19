@@ -1,0 +1,15 @@
+.money .has{
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #999;
+  padding: 20rpx;
+  text-align: right;
+}
+.money .has text{
+  font-weight: bold;
+  color: #666;
+}
+.money .list{
+  display: flex;
+  flex-wrap: wrap;
+}

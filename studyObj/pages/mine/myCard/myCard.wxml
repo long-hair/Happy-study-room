@@ -1,0 +1,10 @@
+<view class="myCard">
+  <view wx:for="{{cardList}}" wx:key="index" class="type">
+    <view class="name">{{item.name}}</view>
+    <view class="info">
+      <view class="area">可用范围：{{item.area}}</view>
+      <view class="dura">有效期：{{item.dura}}</view>
+    </view>
+    <view class="buy" bindtap="useAction">现在使用</view>
+  </view>
+</view>

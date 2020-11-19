@@ -1,0 +1,45 @@
+.myCard .type{
+  width: 90%;
+  height: 180rpx;
+  margin: 30rpx auto;
+  box-shadow: 0 0 10rpx #aaa;
+  display: flex;
+  align-items: center;
+}
+.myCard .type .name{
+  width: 200rpx;
+  height: 100%;
+  background-image: linear-gradient(to right, #8887FD, #B8B2EF);
+  text-align: center;
+  line-height: 180rpx;
+  font-size: 26rpx;
+  color: #fff;
+}
+.myCard .type .info{
+  flex: 1;
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.myCard .type .info .area{
+  font-size: 28rpx;
+  color: #333;
+  font-weight: bold;
+}
+.myCard .type .info .dura{
+  font-size: 26rpx;
+  color: #666;
+  margin-top: 20rpx;
+}
+.myCard .type .buy{
+  width: 160rpx;
+  height: 120rpx;
+  box-sizing: border-box;
+  border-left: 1px solid #BAB9F4;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 28rpx;
+  color: #8080FF;
+}

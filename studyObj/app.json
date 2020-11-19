@@ -4,7 +4,7 @@
     "pages/mine/mine/mine",
     "pages/ident/ident/ident",
     "pages/ident/orderDetail/orderDetail",
-    "pages/ident/changeTime/changeTime"
+    "pages/ident/changeTime/changeTime",
     "pages/index/sunscribe/subscribe"
   ],
   "window": {
@@ -28,14 +28,15 @@
       {
         "pagePath": "pages/ident/ident/ident",
         "text": "我的订单",
-        "iconPath": "./assets/img/mine.png",
-        "selectedIconPath": "./assets/img/smine.png"
+        "iconPath": "./assets/img/ident.png",
+        "selectedIconPath": "./assets/img/sident.png"
+        
       },
       {
         "pagePath": "pages/mine/mine/mine",
         "text": "个人中心",
-        "iconPath": "./assets/img/ident.png",
-        "selectedIconPath": "./assets/img/sident.png"
+        "iconPath": "./assets/img/mine.png",
+        "selectedIconPath": "./assets/img/smine.png"
       }
     ],
     "position": "bottom"

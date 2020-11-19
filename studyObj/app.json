@@ -5,6 +5,7 @@
     "pages/ident/ident/ident",
     "pages/ident/orderDetail/orderDetail",
     "pages/ident/changeTime/changeTime"
+    "pages/index/sunscribe/subscribe"
   ],
   "window": {
     "backgroundTextStyle": "light",

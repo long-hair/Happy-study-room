@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js",
-    "startmg": "mongod --dbpath=D:/微信小程序/小程序/db/db --logpath=D:/微信小程序/小程序/db/log/db.log"
+
+    "startmg":"mongod --dbpath=D:\/微信小程序\/Happy-study-room\/studyObj\/db\/db --logpath=D:/微信小程序/Happy-study-room/studyObj/db/log/db.log"
   },
   "keywords": [],
   "author": "",

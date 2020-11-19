@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    isLogin:getApp().store.getState().isLogin,
     swiper: ['/assets/img/swiper1.svg', '/assets/img/swiper2.svg'],
     space: [{
       src: '/assets/img/swiper1.svg',
@@ -37,6 +38,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    getApp().store.subscribe(()=>{
+      this.setData({isLogin:getApp().store.getState().isLogin})
+    })
 
   },
 

@@ -45,6 +45,11 @@ Page({
   login:function (info){
     if(info.detail.errMsg==='getUserInfo:ok'){
       this.setData({head:info.detail.userInfo.avatarUrl})
+      console.log('确认')
+      getApp().store.dispatch({
+        type:'login',
+        value:true
+      })
     }else{
         wx:wx.showToast({
           title: '登录失败请重试！',

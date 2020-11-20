@@ -1,4 +1,8 @@
 <!--pages/index/sunscribe/subscribe.wxml-->
 <view class="page">
-  <Area/>
+  <Area index="{{index}}" bind:indexChange = "indexChange"/>
+  <!-- <Week time = '{{1602334927000}}'/> -->
+  <Week windex="{{wIndex}}" bind:wIndexChange = "wIndexChange"/>
+
+  <Seat/>
 </view>

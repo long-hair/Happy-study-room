@@ -1,6 +1,9 @@
 {
   "usingComponents": {
-    "Area":"../../component/chooseSeat/area/area"
+    "Area":"../../component/chooseSeat/area/area",
+    "Week":"../../component/chooseSeat/week/week",
+    "Seat":"../../component/chooseSeat/seat/seat"
+
   },
   "navigationBarTitleText": "预约选座"
 }

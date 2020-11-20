@@ -20,6 +20,7 @@
 }
 .solo_dark{
   border-radius:  0 27.5rpx 27.5rpx 0;
-
-
+}
+.active{
+  background: linear-gradient(270deg, rgba(128, 128, 255, 1) 0%, rgba(140, 139, 206, 1) 100%);
 }

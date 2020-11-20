@@ -5,13 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    index:0,
+    wIndex:0,
   },
 
+
+  // 子组件对index的修改
+  indexChange(e){
+    this.setData({index:e.detail})
+  },
+  wIndexChange(e){
+    console.log('week',e.detail)
+    this.setData({wIndex:e.detail})
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options)
+    this.setData({index:options.index})
 
   },
 

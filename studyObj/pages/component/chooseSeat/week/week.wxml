@@ -1,2 +1,6 @@
 <!--pages/component/chooseSeat/week/week.wxml-->
-<text>pages/component/chooseSeat/week/week.wxml</text>
+<view class="week_wrap">
+  <scroll-view enable-flex="{{true}}"  scroll-y="{{true}}" scroll-x="{{true}}"  class="scroll_wrap">
+    <view class="week_item {{windex== index? 'active':''}}" bindtap="indexChange" data-index="{{index}}"  wx:for="{{weeklist}}" wx:key="index">{{item}} ({{datelist[index]}})</view>
+  </scroll-view>
+</view>

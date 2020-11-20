@@ -1,6 +1,6 @@
 <!--pages/component/chooseSeat/area/area.wxml-->
 <view class="area_wrap">
-  <view class="double area">双人阅读区</view>
-  <view class="solo_light area">明区-单人</view>
-  <view class="solo_dark area">暗区-单人</view>
+  <view class="double area {{index == 1 ? 'active' :''}}"  bindtap="changeIndex" data-index = '1'>双人阅读区</view>
+  <view class="solo_light area {{index == 2 ? 'active':''}}" bindtap="changeIndex" data-index ='2' >明区-单人</view>
+  <view class="solo_dark area {{index == 3 ? 'active':''}}" bindtap="changeIndex" data-index = '3'>暗区-单人</view>
 </view>

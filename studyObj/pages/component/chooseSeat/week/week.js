@@ -29,10 +29,12 @@ Component({
    */
   methods: {
     indexChange(ev){
+      const d = new Date().getTime()
       const index = ev.currentTarget.dataset.index;
-      console.log('子week',index)
+      const target_date = 24*60*60*1000*index+d;
 
-      this.triggerEvent('wIndexChange',index)
+
+      this.triggerEvent('wIndexChange',{index,date:this.data.datelist[index],target_date})
 
 
     }

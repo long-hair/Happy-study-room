@@ -62,7 +62,13 @@
         {
           "name": "选座",
           "pathName": "pages/index/sunscribe/subscribe",
+          "query": "",
           "scene": 1001
+        },
+        {
+          "name": "pages/index/sunscribe/subscribe",
+          "pathName": "pages/index/sunscribe/subscribe",
+          "scene": null
         }
       ]
     }

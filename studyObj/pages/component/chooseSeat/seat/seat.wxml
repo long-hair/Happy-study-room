@@ -1,2 +1,26 @@
 <!--pages/component/chooseSeat/seat/seat.wxml-->
-<text>pages/component/chooseSeat/seat/seat.wxml</text>
+<view  class="chooseSeat">
+  <view class="type">
+    <view class="status"><view class="box occupy"></view><view  class="text">已满</view></view>
+    <view class="status"><view class="box leisure"></view><view  class="text">空闲</view></view>
+    <view class="status"><view class="box active"></view><view  class="text">已选</view></view>
+  </view>
+  <view class="seat_wrap">
+    <view wx:for="{{table_num}}" class="column"  wx:for-index="i_column" wx:for-item="table_num">
+      <view  class="table" >{{table_num+1}}号桌</view>
+      <view 
+      wx:for="{{temporal_interval[1]-temporal_interval[0]}}"
+      wx:for-index="i_row" 
+      wx:for-item="time_num" 
+      bindtap="active"
+      class="row {{seats[table_num] ? (seats[table_num][time_num] === 0 ? 'full' : (seats[table_num][time_num] == 2 ? 'check' : 'free')):'free'}}" 
+      data-index="{{[table_num,time_num]}}">
+        {{temporal_interval[0]+time_num+':00'}}-{{temporal_interval[0]+time_num+1+':00'}}
+      </view>
+    </view>
+
+  </view>
+  
+
+    <view></view>
+</view>

@@ -2,7 +2,8 @@
 <view class="page">
   <Area index="{{index}}" bind:indexChange = "indexChange"/>
   <!-- <Week time = '{{1602334927000}}'/> -->
-  <Week windex="{{wIndex}}" bind:wIndexChange = "wIndexChange"/>
-
-  <Seat/>
+  <Week windex="{{wIndex}}" timestamp = "{{timestamp}}" bind:wIndexChange = "wIndexChange"/>
+  <scroll-view enable-flex="{{true}}" scroll-x="{{true}}" scroll-y="{{true}}" class="scroll_wrap">
+        <Seat seats="{{seats}}" bind:seatChange="seatChange"/>
+  </scroll-view>
 </view>

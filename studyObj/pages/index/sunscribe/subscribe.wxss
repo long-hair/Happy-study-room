@@ -1,1 +1,9 @@
 /* pages/index/sunscribe/subscribe.wxss */
+.scroll_wrap{
+  width: 100%;
+  height: 960rpx;
+  display: flex;
+  white-space: nowrap;
+
+
+}

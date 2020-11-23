@@ -54,8 +54,7 @@ Page({
         wx:wx.showToast({
           title: '登录失败请重试！',
           duration: 0,
-          icon: icon,
-          image: 'image',
+
           mask: true,
           success: (res) => {},
           fail: (res) => {},

@@ -1,1 +1,29 @@
-/* pages/mine/question/question.wxss */
+.qs .wrap{
+  padding-left: 50rpx;
+  padding-top: 40rpx;
+}
+.qs .wrap .tit{
+  position: relative;
+  padding-left: 20rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: rgb(128,128,255);
+}
+.qs .wrap .tit::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(128,128,255);
+  width: 10rpx;
+}
+.qs .wrap .con{
+  padding-top: 20rpx;
+}
+.qs .wrap .con .item{
+  line-height: 60rpx;
+  font-size: 26rpx;
+  color: #333;
+  padding-left: 20rpx;
+}

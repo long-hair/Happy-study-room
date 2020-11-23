@@ -1,2 +1,8 @@
-<!--pages/mine/question/question.wxml-->
-<text>pages/mine/question/question.wxml</text>
+<view class="qs">
+  <view class="wrap" wx:for="{{qs}}" wx:for-item="q" wx:for-index="i" wx:key="i" >
+    <view class="tit">{{q.tit}}</view>
+    <view class="con">
+      <view class="item" wx:for="{{q.tips}}" wx:for-item="t" wx:for-index="j" wx:key="j"  >{{j+1}}、{{t}}</view>
+    </view>
+  </view>
+</view>

@@ -1,12 +1,37 @@
 <view class="money">
   <view class="has">我的账户余额：<text>xx元</text></view>
   <view class="list">
-    <view class="item" wx:for="{{moneyType}}" wx:key="index" >
+    <view 
+      class="item {{choosed === item.pr ? 'active' : '' }}" 
+      wx:for="{{moneyType}}" 
+      wx:key="index"
+      bindtap="clickAction"
+      data-pr="{{item.pr}}"
+    >
       <text>￥{{item.pr}}</text>
       <text>送{{item.ot}}元</text>
     </view>
   </view>
   <view class="pay">
-    <button bindtap="payAction" >充值</button>
+    <button bindtap="payAction">充值</button>
+  </view>
+  <view class="mask" wx:if="{{showModule}}" >
+    <view class="module">
+      <view class="top">请选择支付方式</view>
+      <radio-group bindchange="changeAction" class="type" >
+        <view class="{{type === 'wx' ? 'active' : ''}}" >
+          <radio value="wx" checked="true" />
+          <text>微信支付</text>
+        </view>
+        <view class="{{type === 'xyk' ? 'active' : ''}}">
+          <radio value="xyk" />
+          <text>信用卡支付</text>
+        </view>
+      </radio-group>
+      <view class="paytrue">
+        <button bindtap="payTrueAction" >确认支付</button>
+      </view>
+      <view class="close" bindtap="closeAction" >X</view>
+    </view>
   </view>
 </view>

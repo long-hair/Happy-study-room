@@ -53,6 +53,9 @@ Page({
   },
   callAction(){
     console.log('callAction');
+  },
+  detail(){
+    console.log('detail');
   }
 
 })

@@ -12,4 +12,116 @@
 .money .list{
   display: flex;
   flex-wrap: wrap;
+  padding-left: 30rpx;
+}
+.money .list .item{
+  width: 220rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  margin-bottom: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #d4d4d4;
+  border-radius: 6rpx;
+}
+.money .list .active{
+  background: #8080FF;
+  border-color: #8080FF;
+}
+.money .list .item text{
+  font-size: 26rpx;
+  color: #888;
+  line-height: 40rpx;
+}
+.money .list .active text{
+  color: #fff;
+}
+.money .pay{
+  width: 90%;
+  margin: 30rpx auto;
+  padding-top: 50rpx;
+  border-top: 1px solid #d4d4d4;
+}
+.money .pay button{
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  border-radius: 45rpx;
+  background: linear-gradient(to right, #8080FF, #DCDBF5);
+  font-size: 26rpx;
+  color: #fff;
+  padding: 0;
+}
+
+.money .mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.money .mask .module{
+  width: 600rpx;
+  height: 460rpx;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10rpx;
+}
+.money .mask .module .top{
+  height: 100rpx;
+  width: 94%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 100rpx;
+  border-bottom: 1px solid #d4d4d4;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  color: #333;
+  font-weight: bold;
+}
+.money .mask .module .type{
+  padding-left: 80rpx;
+  padding-top: 40rpx;
+}
+.money .mask .module .type view{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+}
+.money .mask .module .type text{
+  font-size: 28rpx;
+  color: #333;
+}
+.money .mask .module .type .active text{
+  color: #A180FF;
+}
+.money .mask .module .paytrue{
+  width: 100%;
+}
+.money .mask .module .paytrue button{
+  width: 300rpx;
+  height: 80rpx;
+  background: linear-gradient(to right, #8181FF, #C4C1EA);
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  border-radius: 40rpx;
+  padding: 0;
+  color: #fff;
+  margin-top: 30rpx;
+}
+.money .mask .module .close{
+  position: absolute;
+  top: 10rpx;
+  right: 20rpx;
+  font-size: 30rpx;
+  color: #333;
 }

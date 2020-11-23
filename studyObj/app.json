@@ -11,7 +11,6 @@
     "pages/mine/money/money",
     "pages/mine/question/question"
   ],
-  "entryPagePath": "pages/mine/mine/mine",
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F7F7F7",

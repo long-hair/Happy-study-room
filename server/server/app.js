@@ -2,7 +2,7 @@ const Koa = require('koa');
 const error = require('koa-json-error');
 const parameter = require('koa-parameter');
 const bodyparser = require('koa-bodyparser');
-const auth = require('./routes/auth')
+const user = require('./routes/user')
 const app = new Koa();
 //处理错误
 app.use(error({
@@ -16,5 +16,6 @@ app.use(bodyparser());
 parameter(app);
 
 // 使用路由
-app.use(auth.routes()).use(auth.allowedMethods());
+app.use(user.routes()).use(user.allowedMethods());
+
 module.exports=app;

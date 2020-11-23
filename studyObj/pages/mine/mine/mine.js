@@ -1,35 +1,35 @@
-// pages/mine/mine.js
+import storeMixin from '../../../store/store-mixin';
 Page({
-
-  /**
-   * 页面的初始数据
-   */
+  ...storeMixin,
+  
   data: {
-    head:'../../../assets/img/head.png',
+    avatarUrl:'../../../assets/img/head.png',
     share:"../../../assets/img/share.png",
-
+    showLog: true,
+    nickName: '',
   },
-  login:function (info){
-    if(info.detail.errMsg==='getUserInfo:ok'){
-      this.setData({head:info.detail.userInfo.avatarUrl})
-      console.log('确认')
-      getApp().store.dispatch({
-        type:'login',
-        value:true
-      })
-    }else{
-        wx:wx.showToast({
-          title: '登录失败请重试！',
-          duration: 0,
-          icon: icon,
-          image: 'image',
-          mask: true,
-          success: (res) => {},
-          fail: (res) => {},
-          complete: (res) => {},
-        })
+  onLoad(){
+    let isLogin = this.$getState().isLogin;
+    let userInfo = this.$getState().userInfo;
+    this.setData({
+      showLog: !isLogin,
+      nickName: userInfo.nickName,
+      avatarUrl: userInfo.avatarUrl,
+    })
+  },
+  async login(info){
+    if(info.detail.errMsg === 'getUserInfo:ok' ){
+      let {userInfo} = await wx.getUserInfo();
+      this.setData({
+        showLog: false,
+        nickName: userInfo.nickName,
+        avatarUrl: userInfo.avatarUrl,
+      });
+      this.$dispatch({
+        type: 'setUserInfo',
+        value: userInfo
+      });
     }
-    console.log(info);
   },
   buyCardAction(){
     wx.navigateTo({

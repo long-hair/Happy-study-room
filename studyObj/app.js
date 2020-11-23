@@ -1,39 +1,37 @@
-import store from './store/index'
+import store from './store/index';
+import request from './http/request';
+import {CHECKLOGIN_API} from './http/api';
 App({
   store,
 
-  /**
-   * 当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
-   */
   onLaunch: function () {
-    wx.cloud.init({
-      env: 'test-4g05z5qycba62d33'
-    });
+
+    this.getUserInfo();
+
     this.checkLogin();
     
   }, 
-  // 检查登录态
-  checkLogin(){
+
+  async getUserInfo(){
+    const result = await wx.getSetting();
+    if(result.authSetting['scope.userInfo']){
+      const { userInfo } = await wx.getUserInfo();
+      store.dispatch({
+        type: 'setUserInfo',
+        value: userInfo
+      })
+    }
+  },
+  // 检查登录是否过期
+  async checkLogin(){
     const token = wx.getStorageSync('TOKEN');
     if(token){
-      wx.request({
-        url: 'http://localhost:3000/api/auth/check_login',
-        method:'GET',
-        data:{
-          token
-        },
-        success :({statusCode})=>{
-          if(statusCode == 200){
-            console.log('成功')
-          }else{
-            console.log('登陆过期')
-            this.login();
-          }
-        },
-        fail :(err)=>{
-          console.log(err);
-          this.login()
-        }
+      request.get(CHECKLOGIN_API).then((msg)=>{
+        //登录正常
+        console.log(msg);
+      }).catch(error=>{
+        //登录过期，从新登录
+        console.log(error);
       })
     }else{
       this.login();
@@ -64,25 +62,5 @@ App({
        })
      }
     })
-  },
-  /**
-   * 当小程序启动，或从后台进入前台显示，会触发 onShow
-   */
-  onShow: function (options) {
-    
-  },
-
-  /**
-   * 当小程序从前台进入后台，会触发 onHide
-   */
-  onHide: function () {
-    
-  },
-
-  /**
-   * 当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
-   */
-  onError: function (msg) {
-    
   }
 })

@@ -1,15 +1,17 @@
 import {createStore} from 'redux'
 const initialState = {
-  isLogin:false
+  isLogin:false,
+  userInfo: {}
 }
 
 const reducer = (state = initialState,action)=>{
   switch (action.type) {
-    case "login":
+    case "setUserInfo":
       return {
         ...state,
-        isLogin:action.value
-      }
+        isLogin: true,
+        userInfo: action.value
+      };
     default:
       return state;
   }
